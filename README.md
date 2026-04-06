@@ -4,9 +4,12 @@ AI-powered internship application assistant on Cloudflare — CV analysis, cover
 
 ## Cloudflare Criteria
 
+## Live Demo
+https://cf-ai-rolify.pages.dev
+
 | Requirement | Implementation |
 |---|---|
-| LLM | Workers AI — `@cf/meta/llama-3.3-70b-instruct-fp8-fast` |
+| LLM | Workers AI — `@cf/meta/llama-3.1-8b-instruct` |
 | Workflow / coordination | Multi-route Worker coordinating AI calls across CV, cover letter, jobs, and chat |
 | User input via chat | Floating `ChatWidget.jsx` — real-time text chat |
 | Memory / state | Durable Objects (`ChatDO`) for chat history + D1 for application tracker + KV binding |

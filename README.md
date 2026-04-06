@@ -5,7 +5,7 @@ AI-powered internship application assistant on Cloudflare — CV analysis, cover
 ## Cloudflare Criteria
 
 ## Live Demo
-https://cf-ai-rolify.pages.dev
+https://cf-ai-rolify.pages.dev ( go to get started --> resume analyser --> upload cv pdf )
 
 | Requirement | Implementation |
 |---|---|

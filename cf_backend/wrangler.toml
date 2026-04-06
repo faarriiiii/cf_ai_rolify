@@ -1,0 +1,27 @@
+name = "cf_ai_rolify"
+main = "src/worker/index.js"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+[ai]
+binding = "AI"
+
+[[d1_databases]]
+binding = "ROLIFY_DB"
+database_name = "rolify"
+database_id = "2fd8d21c-fec2-40f6-b6f9-f49b5dd24841"
+
+[[kv_namespaces]]
+binding = "ROLIFY_KV"
+id = "11fe5e9c2527455093c8a375285675ec"
+
+[[durable_objects.bindings]]
+name = "CHAT_DO"
+class_name = "ChatDO"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ChatDO"]
+
+[dev]
+port = 8787

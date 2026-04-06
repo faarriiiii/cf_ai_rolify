@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode background */
+.app-bg {
+  background: linear-gradient(135deg, #f0f7e6 0%, #e8f4f0 30%, #fdf6e8 65%, #f5efe8 100%);
+}
+
+/* Dark mode background — lighter slate-indigo (not pitch black) */
+.dark .app-bg {
+  background: linear-gradient(145deg, #1a1828 0%, #1e1c2e 25%, #1c1a2c 55%, #201830 80%, #1a1826 100%);
+}
+
+/* Animated background blobs */
+.blob {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(90px);
+  animation: drift 16s ease-in-out infinite alternate;
+  z-index: 0;
+  transition: background 1s, opacity 1s;
+}
+
+@keyframes drift {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(20px, 25px) scale(1.07); }
+}

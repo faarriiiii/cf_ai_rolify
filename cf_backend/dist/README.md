@@ -1,0 +1,1 @@
+This folder contains the built output assets for the worker "cf_ai_rolify" generated at 2026-04-06T01:45:02.790Z.
